@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ini Website Saya Pak</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="manifest" href="/manifest.json">
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<h1>Selamat Datang di Website Saya Pakk</h1>
+		<p>Ini halaman utama website saya pak.</p>
+		<p>Menu menu diatas bisa di klik untuk mengunjungi halaman lainnya pak.</p>
+        <p>Ini adalah halaman utama website saya yang kini sudah menjadi Progressive Web App (PWA).</p>
+        <p>PWA memberikan pengalaman pengguna yang lebih baik dengan kemampuan untuk diinstal di perangkat Anda, bekerja secara offline, dan melakukan pembaruan otomatis.</p>
+		<img src="image.jpg" alt="Gambar Website Saya" class="logo">
+
+		<button id="installButton" style="display: block;">Instal Disini</button>
+	</div>
+	<script>
+        // Mendaftarkan Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker berhasil didaftarkan:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Pendaftaran ServiceWorker gagal:', error);
+                    });
+            });
+        }
+
+    </script>
+</body>
+</html>

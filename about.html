@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="manifest" href="/manifest.json">
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		
+		<h1>About Us</h1>
+		<p>Ini adalah halaman tentang saya pak.</p>
+		<p>Perkenalkan pak</p>
+		<p>Nama saya Fikhri Hanif</p>
+		<p>Dari prodi Informatika Universitas Andalas</p>
+		<p>Berasal dari Bukittinggi</p>
+		<p>Website ini adalah contoh Progressive Web App (PWA) yang memberikan pengalaman pengguna yang lebih baik.</p>
+        <p>Kami bertujuan untuk menyediakan informasi yang berguna dengan aksesibilitas yang tinggi, termasuk kemampuan untuk diakses secara offline dan diinstal di perangkat Anda.</p>
+
+		<img src="foto.jpg" alt="Foto Saya Pak" class="Foto">
+	</div>
+       
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js')
+					.then(registration => {
+						console.log('ServiceWorker berhasil didaftarkan:', registration);
+					})
+					.catch(error => {
+						console.log('Pendaftaran ServiceWorker gagal:', error);
+					});
+			});
+		}
+	</script>
+</body>
+</html>

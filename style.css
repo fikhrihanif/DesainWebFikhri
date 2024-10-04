@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	max-width: 200px; 
+	max-height: 400px; 
+	border-radius: 0; 
+	margin: 10px;
+	display: block; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  }
+
+.Foto {
+	max-width: 100px; 
+	max-height: 200px; 
+	border-radius: 0;
+	float: right, top;
+	margin: 10px;
+
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.container {
+	max-width: 800px;
+	margin: 40px auto;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #333;
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.menu a:hover {
+	color: #ccc;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+p {
+	margin-bottom: 20px;
+	
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #23527c;
+}
+
+/* Gaya dasar tombol */
+#installButton {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white; /* Warna teks putih */
+    padding: 15px 30px; /* Ruang dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border: none; /* Hilangkan border default */
+    border-radius: 8px; /* Ujung tombol melengkung */
+    cursor: pointer; /* Ganti cursor saat hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi */
+}
+
+/* Gaya tombol saat di-hover */
+#installButton:hover {
+    background-color: #45a049; /* Warna tombol berubah saat hover */
+    transform: scale(1.05); /* Sedikit memperbesar ukuran tombol saat hover */
+}
+
+/* Gaya tombol saat di-klik */
+#installButton:active {
+    background-color: #3e8e41; /* Warna tombol saat diklik */
+    transform: scale(0.98); /* Sedikit mengecilkan ukuran tombol saat di-klik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lebih kecil saat di-klik */
+}
