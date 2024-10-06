@@ -1,15 +1,7 @@
 const CACHE_NAME = 'site-cache-v1';
 const urlsToCache = [
-    '/index.html',
-    '/app.js',
-    '/contact.html',
     '/about.html',
-    '/confirmation.html',
     '/style.css',
-    '/foto.png',
-    '/image.jpg',
-    '/Logo192.png',
-    '/Logo512.png',
     '/offline.html' 
 ];
 
